@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 //DAO
 public class DBUtil {
-    private static final String PERSISTENCE_UNIT_NAME = "takslist";
+    private static final String PERSISTENCE_UNIT_NAME = "tasklist";
     private static EntityManagerFactory emf;
 
     public static EntityManager createEntityManager(){
