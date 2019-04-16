@@ -28,7 +28,7 @@ public class UpdateServlet extends HttpServlet {
         String _token = (String)request.getParameter("_token");
         if(_token != null && _token.equals(request.getSession().getId())){
             EntityManager em = DBUtil.createEntityManager();
-            Task t = em.find(Task.class, (Integer)(request.getSession().getAttribute("mtask_id")));
+            Task t = em.find(Task.class, (Integer)(request.getSession().getAttribute("task_id")));
 
             String content = request.getParameter("content");
             t.setContent(content);
