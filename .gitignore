@@ -19,5 +19,3 @@ build/
 Thumbs.db
 .DS_Store
 
-# MySQL
-persistence.xml
